@@ -36,3 +36,6 @@ sudo touch /etc/NIXOS
 sudo touch /etc/NIXOS_LUSTRATE
 
 echo etc/nixos | sudo tee -a /etc/NIXOS_LUSTRATE
+
+sudo mv -v /boot /boot.bak &&
+sudo /nix/var/nix/profiles/system/bin/switch-to-configuration boot
